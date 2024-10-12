@@ -1,5 +1,5 @@
 # TDD DJANGO
-Project for studing TDD
+Test Driven Development with Django
 
 ## DOCKER
 ### 1 Run this commands:
