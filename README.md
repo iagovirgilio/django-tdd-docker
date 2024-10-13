@@ -13,6 +13,11 @@ docker compose up -d
 docker compose down -v
 ```
 
+- Re-Build
+```bash
+docker compose up -d --build
+```
+
 ### 2. Run the migrations:
 ```bash
 docker compose exec movies python manage.py migrate --noinput
