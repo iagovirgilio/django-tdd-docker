@@ -10,6 +10,10 @@ docker compose up -d
 ```
 - Down
 ```bash
+docker compose down
+```
+- Down (remove volume)
+```bash
 docker compose down -v
 ```
 
