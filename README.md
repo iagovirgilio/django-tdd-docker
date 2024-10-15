@@ -16,7 +16,7 @@ docker compose down -v
 - Re-Build
 ```bash
 docker compose up -d --build
-```
+```doc
 
 ### 2. Run the migrations:
 ```bash
@@ -32,6 +32,11 @@ docker volume inspect django-tdd-docker_postgres_data
 ```bash
 docker compose exec movies python manage.py flush
 docker compose exec movies python manage.py loaddata movies.json
+```
+
+### 5. Generate SECRET_KEY
+```bash
+docker compose exec movies python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 ```
 
 ## HTTPie
